@@ -27,7 +27,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-/////////////
+app.get("/", (req, res) => {
+  res.json({ "hello": "hello blackwell you have been deployed"})
+})
+
+///auth middleware//////////
 app.get("/api/user/auth", auth, (req, res) => {
   res.status(200).json({
     _id: req._id,
