@@ -28,7 +28,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  res.json({ "hello": "hello blackwell you have been deployed"})
+  res.json({ "hello": "hello blackwell you have been deployed" })
 })
 
 ///auth middleware//////////
