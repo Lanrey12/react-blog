@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "react blog",
   "main": "index.js",
+  "engine": {
+    "node": "12.13.1",
+    "npm": "6.12.1"
+  },
   "scripts": {
     "start": "node server/index.js",
     "backend": "nodemon server/index.js"
